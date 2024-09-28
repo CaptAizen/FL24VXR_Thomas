@@ -22,15 +22,13 @@ public class FlashlightTool : MonoBehaviour
     {
        GameObject lightGameObject = new GameObject("The Light");
 
-        Debug.Log(new GameObject(lightGameObject.name).name);
-
         Flashlight = lightGameObject.AddComponent<Light>();
         
         Flashlight.color = Color.white;
 
         Flashlight.type = LightType.Point;
 
-        lightGameObject.transform.position = new Vector3(-0.744000018f, 1.48000002f, -7.28999996f);
+        lightGameObject.transform.position = new Vector3(0, 2, -5);
 
         flashlightState = true;
     }
