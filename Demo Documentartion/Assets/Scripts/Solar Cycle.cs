@@ -28,20 +28,16 @@ public class SolarCycle : MonoBehaviour
             enableDayNightCycle = !enableDayNightCycle;
         }
 
+        if (enableDayNightCycle)
+        {
+        transform.position = new Vector3 (0, 0, x);
+        }
         
 
-        if (enableDayNightCycle == true)
-        {
-        transform.rotation = Quaternion.Euler(new Vector3(x, tilt, 0));
-        }
 
-        if (enableDayNightCycle == true && Input.GetKeyDown(KeyCode.E))
-        {
-            tilt += .5f;
-            transform.rotation = Quaternion.Euler(new Vector3(x, tilt, 0));
         }
 
 
     }
 
-    }
+    
